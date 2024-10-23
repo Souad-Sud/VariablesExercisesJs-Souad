@@ -1,9 +1,12 @@
-// Exercise 1 - initialise these variables
+// Exercise 1 - initialise these variables / give it a name
+//23-10-2023 correction
+
 
 const FUTURE_YEAR = 2045; // don't change this
 let firstName;
 let birthYear;
 
+//correcrt
 // write your code here :
 firstName = "Souad";
 birthYear = 1990;
@@ -11,8 +14,10 @@ birthYear = 1990;
 
 // Work out your age in 2045.
 let futureAge;
+
+//
 // write your code here :
-futureAge = birthYear - FUTURE_YEAR;
+futureAge = FUTURE_YEAR - birthYear;
 
 // Exercise 2 - Initialise the 'type' variables to show their type
 
@@ -24,12 +29,10 @@ let firstNameBirthYearType;
 
 // write your code here :
  
-firstNameType = "string";
-birthYearType = "number";
-futureAgeType = "number"
-firstNameBirthYearType = " string + number"
- 
- 
+firstNameType = typeof firstName;
+birthYearType = typeof birthYear;
+futureAgeType = typeof futureAge;
+firstNameBirthYearType = typeof firstNameBirthYear;
 
 
 // Exercise 3
