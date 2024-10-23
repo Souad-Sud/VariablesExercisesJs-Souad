@@ -15,7 +15,7 @@ birthYear = 1990;
 // Work out your age in 2045.
 let futureAge;
 
-//
+
 // write your code here :
 futureAge = FUTURE_YEAR - birthYear;
 
@@ -40,6 +40,7 @@ firstNameBirthYearType = typeof firstNameBirthYear;
 let numbersFirst;
 let stringFirst;
 
+//Correct
 // write your code here :
 numbersFirst = birthYear + FUTURE_YEAR + firstName;
 stringFirst = firstName + birthYear + FUTURE_YEAR;
@@ -59,7 +60,10 @@ let fiveYears;
 fiveDays = CupCoffeePerDay  * 5;
 thirtyDays = CupCoffeePerDay * 30 ;
 oneYear = CupCoffeePerDay * 365;
-fiveYears= CupCoffeePerDay * 5 * 365;
+//add one more day 
+
+//fiveYears= CupCoffeePerDay * 5 * 365;
+fiveYears = 5 * oneYear + CupCoffeePerDay;
 
 // Exercise 5 - you'll need another const
 
@@ -108,8 +112,12 @@ Edit the html file to add what you need, then write JS below to target that elem
 
 // write your code here :
 
+let numberOfYears = FUTURE_YEAR - 2024;
+let futureCoffees = numberOfYears * oneYear + fiveDays ;
 
-document.getElementsByTagName("div"[6]).textContent = "this is a text";
+//this syntax should be after the declaration of variables
+document.getElementById("exercise7").textContent = "By " + FUTURE_YEAR + " I will drink " + futureCoffees + " cups of coffee";  
+//document.getElementsByTagName("div"[6]).textContent = "this is a text";
  
 
 // Exercise 8
@@ -119,10 +127,14 @@ No help on this one. Write the html element you need in the html file and the JS
 
 // write your code here :
 
-let priceAfterTwoYears;
-priceAfterTwoYears = CoffeeInTwoYears * CupCoffeePerDay * (2*365);
+// let priceAfterTwoYears;
+// priceAfterTwoYears = CoffeeInTwoYears * CupCoffeePerDay * (2*365);
+
+//correction 
+let futureCoffeesCost = 2 * oneYearCost + (numberOfYears -2) * oneYear * 
+CoffeeInTwoYears + 5 * CupCoffeePerDay;
  
-document.getElementById('total-cost').textContent = priceAfterTwoYears;
+document.getElementById('total-cost').textContent = futureCoffeesCost + " on coffee";
 
 /* *********************************************************************************** */
 /* DO NOT TOUCH ANYTHING BELOW HERE */
